@@ -21,7 +21,7 @@ const HomePage = () => {
               </Grid>
               <Grid container direction="column" justifyContent="center">
                 <Grid item>
-                  <Typography variant='subtitle'>A l'aide!! L'équipe Serval est parti en mer pour secourir un bateau déchu !!</Typography>
+                  <Typography variant='subtitle'>A l'aide !! L'équipe Serval est parti en mer pour secourir un bateau déchu !!</Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant='subtitle'>Partez à la bataille et remportez les mini-jeux pour sauver les marins !!</Typography>
@@ -30,8 +30,6 @@ const HomePage = () => {
             </>
           }
         />
-      
-      
     </>
   );
 }
