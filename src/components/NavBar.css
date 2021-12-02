@@ -26,14 +26,14 @@
     /* color: transparent; */
     font-size: medium;
     font-weight: 500;
-    background-color: #3e5fa5;
+    background-color: #514bbf;
     position: static;
     display: flex;
     align-content: center;
     justify-content: center;
   }
   .navbar__links:hover {
-    color: rgb(53, 43, 143);
+    color: rgb(29, 28, 83);
     background-color: transparent;
     text-decoration: underline;
   }

@@ -11,10 +11,10 @@ const NavBar = () => {
         <AppBar className="navbar" id="navbar">
           <Toolbar  >
             <ListItemLink href="/" className='navbar__links' id="nav-logo">
-              <img alt=" " src="/serval.png" className="App-logo" id="logo-nav"/>
+              <img alt=" " src="/logo_ocean.png" className="App-logo" id="logo-nav"/>
             </ListItemLink>
             <ListItemLink href="/filter" className='navbar__links' id="nav-filter">
-              Fruits et Légumes
+            
             </ListItemLink>
             <ListItemLink href="/fridge" className='navbar__links' id="nav-fridge">
               Frigo
