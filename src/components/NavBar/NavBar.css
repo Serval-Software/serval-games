@@ -34,6 +34,4 @@
   }
   .navbar__links:hover {
     color: rgb(29, 28, 83);
-    background-color: transparent;
-    text-decoration: underline;
   }
