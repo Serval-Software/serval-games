@@ -33,22 +33,22 @@ const NavBar = () => {
     return (
         <AppBar className="navbar" id="navbar">
           <Toolbar  >
-            <ListItemLink href="/" className='navbar__links' id="nav-logo" onClick={(e) => handleClick}>
-              <img alt=" " src="/serval.png" className="App-logo" id="logo-nav"/>
+            <ListItemLink href="/" className='navbar__links' id="nav-logo" onClick={handleClick}>
+              <img alt=" " src="/logo_ocean.png" className="App-logo" id="logo-nav"/>
             </ListItemLink>
-            <ListItemLink href="/demineur" className='navbar__links' id="nav-filter" onClick={(e) => handleClick}>
+            <ListItemLink href="/demineur" className='navbar__links' id="nav-filter" onClick={handleClick}>
               Démineur
             </ListItemLink>
-            <ListItemLink href="/puzzle" className='navbar__links' id="nav-fridge" onClick={(e) => handleClick}>
+            <ListItemLink href="/puzzle" className='navbar__links' id="nav-fridge" onClick={handleClick}>
               Puzzle
             </ListItemLink>
-            <ListItemLink href="/shark" className='navbar__links' id="nav-fridge-addition" onClick={(e) => handleClick}>
+            <ListItemLink href="/shark" className='navbar__links' id="nav-fridge-addition" onClick={handleClick}>
               Shark Attack
             </ListItemLink>
-            <ListItemLink href="/other" className='navbar__links' id="nav-shopping" onClick={ (e) => handleClick}>
+            <ListItemLink href="/other" className='navbar__links' id="nav-shopping" onClick={ handleClick}>
               Autre
             </ListItemLink>
-            <ListItemLink href="/other" className='navbar__links' id="nav-recipes" onClick={ (e) => handleClick}>
+            <ListItemLink href="/other" className='navbar__links' id="nav-recipes" onClick={ handleClick}>
               Autre
             </ListItemLink>
           </Toolbar>
