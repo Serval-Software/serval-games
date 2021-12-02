@@ -15,7 +15,7 @@ const MinesweeperPage = () => {
             blockBody = {
                 <>
                     <Typography variant="h4">Bienvenue dans le minesweeper. Premier mini-jeu de la soirée!</Typography>
-                    <MinesweeperTab/>
+                    <MinesweeperTab array state/>
                 </> 
             }
             />
