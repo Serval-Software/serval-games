@@ -1,0 +1,64 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#shark{
+    width: 70px;
+    height: 70px;
+    background-image: url(./img/requin.png);
+    background-size: 70px 70px;
+
+    position: absolute;
+    top: 278px;
+
+    
+}
+
+.jump{
+    animation: jump 0.4s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 278px;
+    }
+    30% {
+        top: 248px;
+    }
+    50% {
+        top: 188px;
+    }
+
+    80% {
+        top: 258px;
+    }
+    100% {
+        top: 278px;
+    }
+}
+#obstacle{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 160px;
+
+    left: 550px;
+    background-image: url(./img/corail.png);
+    background-size: 40px 40px;
+
+    animation: block 1s infinite linear;
+}
+
+
+@keyframes block {
+    0% {
+        left: 550px;
+    }
+    100% {
+        left: -20px;
+    }
+    
+}
