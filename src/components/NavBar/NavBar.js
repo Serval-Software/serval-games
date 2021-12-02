@@ -14,20 +14,16 @@ const NavBar = () => {
 
     function handleClick(){
       let e = document.getElementById("nav-filter");
-      e.addEventListener('click', preventDefault, false)
+      
       
       //setRandomint(getRandomArbitrary(21));
       setRandomint(1)
       console.log(randomint)
       if(randomint === 1){
+        e.preventDefault();
         history.push("/pirate");
       }
     
-    }
-
-    function preventDefault(e) {
-      e.preventDefault();
-      alert("Oh non tu t'es fait attaqué par le pirate Ricky Rolly")
     }
 
     return (
