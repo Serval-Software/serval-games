@@ -15,7 +15,6 @@ const RickyRollyPage = () => {
                 <Typography variant="h2" className="ricky__title"> Arghhh le pirate Ricky Rolly t'a attrapé ! </Typography>
                 <Grid container direction="column" alignItems="center"  >
                   <Grid item>
-
                   <iframe 
                     width="560" 
                     height="315" 
@@ -27,8 +26,7 @@ const RickyRollyPage = () => {
                   </Grid>
                 </Grid>
             </React.Fragment>
-        }
-        />
+        }/>
     </>
   );
 }
