@@ -1,8 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState}from 'react';
 import { Grid, Typography } from '@material-ui/core';
 
-const Datasweeper = ({GameArray, stateCase}) =>{
+import Minesweeper from '../../minesweeper/Minesweeper';
 
+const Datasweeper = ({difficulty}) =>{
+
+
+    const [GameArray, setGameArray] = useState([]);
+    const [stateCase, setState] = useState([]);
+
+    useEffect(() => {
+
+        var minegame = new Minesweeper(difficulty);
+
+        setState(minegame.hidden)
+        setGameArray(minegame.board)
+
+    
+
+    }, [GameArray, stateCase]);
     function MakeCase(oneCase){
         if(stateCase){
             return(

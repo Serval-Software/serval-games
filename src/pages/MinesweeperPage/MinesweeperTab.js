@@ -6,15 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Datasweeper from './Datasweeper';
 
 const MinesweeperTab = ({array, state}) => {
-    const [GameArray, setGameArray] = useState([]);
-    const [stateCase, setState] = useState(false);
-
-    useEffect(() => {
-        setState(state)
-        setGameArray(array)
-    
-
-    }, [GameArray, stateCase]);
     function TabPanel(props) {
         const { children, value, index, ...other } = props;
       
@@ -77,13 +68,13 @@ const MinesweeperTab = ({array, state}) => {
                 </AppBar>
                 <Typography className={ "typoGeneral" } component='div' style={{ backgroundColor: '#C2D3F7', minHeight:'90vh' }} >
                   <TabPanel value={ value } index={0}>  
-                      <Datasweeper GameArray={GameArray} stateCase={stateCase}></Datasweeper>
+                      <Datasweeper difficulty="beginner"></Datasweeper>
                   </TabPanel>
                   <TabPanel value={ value } index={1}>
-                        <Datasweeper width="16" heigth="16"></Datasweeper>
+                        <Datasweeper difficulty="intermediate"></Datasweeper>
                   </TabPanel>
                   <TabPanel value={ value } index={2}>
-                        <Datasweeper width="16" heigth="31"></Datasweeper>
+                        <Datasweeper difficulty="expert"></Datasweeper>
                   </TabPanel>
                 </Typography>
             </Grid>
