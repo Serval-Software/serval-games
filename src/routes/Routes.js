@@ -9,6 +9,7 @@ import NavBar from '../components/NavBar/NavBar';
 import RickyRollyPage from '../pages/RickyRollyPage/RickyRollyPage';
 import MinesweeperPage from '../pages/MinesweeperPage/MinesweeperPage';
 import Footer from '../components/Footer/Footer';
+import SharckAttack from '../pages/SharkAttack/SharkAttack';
 
 function App() {
   return (
@@ -30,6 +31,11 @@ function App() {
             exact
             path='/minesweeper'
             render={ (props) => <MinesweeperPage {...props}/> }
+          />
+          <Route
+            exact
+            path='/shark'
+            render={ (props) => <SharckAttack {...props}/> }
           />
         </Switch>
       </BrowserRouter>

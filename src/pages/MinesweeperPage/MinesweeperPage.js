@@ -11,7 +11,7 @@ const MinesweeperPage = () => {
     return(
         <>
             <Layout
-            page="Home"
+            page="Minesweeper"
             blockBody = {
                 <>
                     <Typography variant="h4">Bienvenue dans le minesweeper. Premier mini-jeu de la soirée!</Typography>
