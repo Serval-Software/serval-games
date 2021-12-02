@@ -10,7 +10,7 @@ const HomePage = () => {
       <Typography component="div" style={{ backgroundColor: '#C2D3F7', paddingLeft:0 ,paddingTop:5}}>
         <Box
         sx={{
-            minHeight: '100%',
+            minHeight: '100vh',
             py: 3,
             margin:0
         }}
