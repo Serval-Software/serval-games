@@ -8,7 +8,7 @@ import './NavBar.css';
 const NavBar = () => {
     
   useEffect(() => {
-    setRandomint(getRandomArbitrary(20));
+    setRandomint(getRandomArbitrary(10));
 
   }, []);
 
