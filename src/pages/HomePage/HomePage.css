@@ -1,11 +1,16 @@
+.Title{
+    display:flex;
+}
+
 .home__title {
     text-align: center;
 }
 
 .home__image {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    align-content: center;
-    justify-content: center;
+    width: 80%;
+}
+
+.grid_home {
+    text-align: center;
+    display: flex;
 }
