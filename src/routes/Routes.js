@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from '../pages/HomePage/HomePage';
 import NavBar from '../components/NavBar/NavBar';
 import RickyRollyPage from '../pages/RickyRollyPage/RickyRollyPage';
+import MinesweeperPage from '../pages/MinesweeperPage/MinesweeperPage';
 
 function App() {
   return (
@@ -23,6 +24,11 @@ function App() {
             exact
             path='/pirate'
             render={ (props) => <RickyRollyPage {...props}/> }
+          />
+          <Route
+            exact
+            path='/minesweeper'
+            render={ (props) => <MinesweeperPage {...props}/> }
           />
         </Switch>
       </BrowserRouter>

@@ -7,13 +7,15 @@ import './NavBar.css';
 
 const NavBar = () => {
     
-  useEffect(() => {
-    setRandomint(getRandomArbitrary(10));
-
-  }, []);
+ 
 
     const [randomint, setRandomint] = useState(0);
     const ListItemLink = (props_) =>  <ListItem button component="a" {...props_} />;
+
+    useEffect(() => {
+      setRandomint(getRandomArbitrary(10));
+  
+    }, []);
 
     return (
         <AppBar className="navbar" id="navbar">
@@ -21,7 +23,7 @@ const NavBar = () => {
             <ListItemLink href={`${randomint === 4 ? '/pirate': '/' }`}  className='navbar__links' id="nav-logo" >
               <img alt=" " src="/logo_ocean.png" className="App-logo" id="logo-nav"/>
             </ListItemLink>
-            <ListItemLink href={`${randomint === 4 ? '/pirate': '/demineur' }`} className='navbar__links' id="nav-filter" >
+            <ListItemLink href={`${randomint === 4 ? '/pirate': '/minesweeper' }`} className='navbar__links' id="nav-filter" >
               Démineur
             </ListItemLink>
             <ListItemLink href={`${randomint === 4 ? '/pirate': '/shark' }`} className='navbar__links' id="nav-fridge" >
