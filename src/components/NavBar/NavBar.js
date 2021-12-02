@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
 import { AppBar, Toolbar, ListItem } from '@material-ui/core';
 import { getRandomArbitrary } from '../Random/Random';
 
@@ -8,43 +7,30 @@ import './NavBar.css';
 
 const NavBar = () => {
     
-    const [randomint, setRandomint] = useState(0);
-    let history = useHistory();
-    const ListItemLink = (props_) =>  <ListItem button component="a" {...props_} />;
+  useEffect(() => {
+    setRandomint(getRandomArbitrary(20));
 
-    function handleClick(){
-      let e = document.getElementById("nav-filter");
-      
-      
-      //setRandomint(getRandomArbitrary(21));
-      setRandomint(1)
-      console.log(randomint)
-      if(randomint === 1){
-        e.preventDefault();
-        history.push("/pirate");
-      }
-    
-    }
+  }, []);
+
+    const [randomint, setRandomint] = useState(0);
+    const ListItemLink = (props_) =>  <ListItem button component="a" {...props_} />;
 
     return (
         <AppBar className="navbar" id="navbar">
           <Toolbar  >
-            <ListItemLink href="/" className='navbar__links' id="nav-logo" onClick={handleClick}>
+            <ListItemLink href={`${randomint === 4 ? '/pirate': '/' }`}  className='navbar__links' id="nav-logo" >
               <img alt=" " src="/logo_ocean.png" className="App-logo" id="logo-nav"/>
             </ListItemLink>
-            <ListItemLink href="/demineur" className='navbar__links' id="nav-filter" onClick={handleClick}>
+            <ListItemLink href={`${randomint === 4 ? '/pirate': '/demineur' }`} className='navbar__links' id="nav-filter" >
               Démineur
             </ListItemLink>
-            <ListItemLink href="/puzzle" className='navbar__links' id="nav-fridge" onClick={handleClick}>
-              Puzzle
-            </ListItemLink>
-            <ListItemLink href="/shark" className='navbar__links' id="nav-fridge-addition" onClick={handleClick}>
+            <ListItemLink href={`${randomint === 4 ? '/pirate': '/shark' }`} className='navbar__links' id="nav-fridge" >
               Shark Attack
             </ListItemLink>
-            <ListItemLink href="/other" className='navbar__links' id="nav-shopping" onClick={ handleClick}>
-              Autre
+            <ListItemLink href={`${randomint === 4 ? '/pirate': '/watersave' }`} className='navbar__links' id="nav-fridge-addition" >
+              Sauveteur en Mer!
             </ListItemLink>
-            <ListItemLink href="/other" className='navbar__links' id="nav-recipes" onClick={ handleClick}>
+            <ListItemLink href={`${randomint === 4 ? '/pirate': '/other' }`} className='navbar__links' id="nav-shopping" >
               Autre
             </ListItemLink>
           </Toolbar>

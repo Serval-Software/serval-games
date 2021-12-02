@@ -11,7 +11,7 @@ const RickyRollyPage = () => {
         page="RickyRolly"
         blockBody = {
             <React.Fragment>
-                <Typography variant="h2"> Arghhh Barbe Rousse ta eu! </Typography>
+                <Typography variant="h2"> Arghhh Barbe Rousse ta attrapé! </Typography>
                 <iframe 
                     width="560" 
                     height="315" 
