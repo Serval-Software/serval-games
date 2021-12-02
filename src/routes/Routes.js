@@ -8,6 +8,7 @@ import HomePage from '../pages/HomePage/HomePage';
 import NavBar from '../components/NavBar/NavBar';
 import RickyRollyPage from '../pages/RickyRollyPage/RickyRollyPage';
 import MinesweeperPage from '../pages/MinesweeperPage/MinesweeperPage';
+import Footer from '../components/Footer/Footer';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           />
         </Switch>
       </BrowserRouter>
+      <Footer/>
     </>
   );
 }
