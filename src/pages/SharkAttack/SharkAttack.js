@@ -6,10 +6,10 @@ import Layout from '../../components/Layout/Layout';
 const SharkAttack = () => {
     return(
         <Layout
-            page="Minesweeper"
+            page="SharAttack"
             blockBody = {
                 <>
-                <Typography variant="h4">Bienvenue dans shark attack. Second mini-jeu de la soirée! </Typography>
+                <Typography variant="h4">Bienvenue dans Shark Attack. Second mini-jeu de la soirée! </Typography>
                 <Grid container direction="column" alignItems="center" xs={12}>
                     <Paper elevation={1}>
                         <ChromeDinoGame />
