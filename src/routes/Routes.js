@@ -10,6 +10,7 @@ import RickyRollyPage from '../pages/RickyRollyPage/RickyRollyPage';
 import MinesweeperPage from '../pages/MinesweeperPage/MinesweeperPage';
 import Footer from '../components/Footer/Footer';
 import SharckAttack from '../pages/SharkAttack/SharkAttack';
+import RescuePage from '../pages/RescuePage/RescuePage';
 
 function App() {
   return (
@@ -36,6 +37,11 @@ function App() {
             exact
             path='/shark'
             render={ (props) => <SharckAttack {...props}/> }
+          />
+          <Route
+            exact
+            path='/watersave'
+            render={ (props) => <RescuePage {...props}/> }
           />
         </Switch>
       </BrowserRouter>
