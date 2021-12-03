@@ -3,7 +3,6 @@ import {Grid, Typography } from '@material-ui/core';
 
 import './SharkAttack.css';
 
-
 const SharkAttack = () => {
     document.addEventListener('DOMContentLoaded', () => {
       const dino = document.getElementById("shark");
@@ -41,12 +40,8 @@ const SharkAttack = () => {
             window.location.href="/";
           }
         }
-      }, 50);
-
-        
-        })
-
-
+      }, 50);   
+    })
 
     return(
         <Layout
@@ -60,8 +55,7 @@ const SharkAttack = () => {
                         <div id="rock"></div>
                       </div>
                     </Grid>
-                </>
-                
+                </>  
             }
         />
     )

@@ -14,8 +14,6 @@ const Footer = () => {
                         Ce site est la propriété de Serval Software <img alt=" " src="/serval.png" className="logo" id="logo-footer" height="50" width="50"/>
                     </Grid>
                 </Grid>
-
-        
     );
 }
 

@@ -4,10 +4,7 @@ import { getRandomArbitrary } from '../Random/Random';
 
 import './NavBar.css';
 
-
 const NavBar = () => {
-    
- 
 
     const [randomint, setRandomint] = useState(0);
     const ListItemLink = (props_) =>  <ListItem button component="a" {...props_} />;

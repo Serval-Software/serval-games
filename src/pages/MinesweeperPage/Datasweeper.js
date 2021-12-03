@@ -5,7 +5,6 @@ import Minesweeper from '../../minesweeper/Minesweeper';
 
 const Datasweeper = ({difficulty}) =>{
 
-
     const [GameArray, setGameArray] = useState([]);
     const [stateCase, setState] = useState([]);
 
@@ -15,8 +14,6 @@ const Datasweeper = ({difficulty}) =>{
 
         setState(minegame.hidden)
         setGameArray(minegame.board)
-
-    
 
     }, [GameArray, stateCase, difficulty]);
     function MakeCase(oneCase){
@@ -41,9 +38,7 @@ const Datasweeper = ({difficulty}) =>{
                     </Grid>
                 </Grid>
             )
-
-        })
-            
+        })    
     }
 
     function make_row(){
@@ -62,10 +57,7 @@ const Datasweeper = ({difficulty}) =>{
         }
         return(
             <Typography>Pas de démineur</Typography>
-        )
-        
-           
-        }
+        )}
 
     return(
         <>
