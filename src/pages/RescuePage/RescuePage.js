@@ -1,6 +1,8 @@
 import { Grid, Typography } from '@material-ui/core';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Layout from '../../components/Layout/Layout';
+
+import axios from 'axios';
 
 const RescuePage = () => {
 
