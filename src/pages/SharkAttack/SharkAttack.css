@@ -1,11 +1,11 @@
-.dino {
+.shark {
     position: absolute;
     width: 60px;
     height: 60px;
     background-image: url(./img/requin.png);
     background-size: 60px 60px;
     bottom: 0px;
-  }
+}
   
   .obstacle {
     position: absolute;
@@ -14,7 +14,7 @@
     background-image: url(./img/corail.png);
     background-size: 60px 60px;
     bottom: 0px;
-  }
+}
   
   @keyframes slideright {
     from {
@@ -23,7 +23,7 @@
     to {
         background-position: 0%;
     }
-  }
+}
   
   @-webkit-keyframes slideright {
     from {
@@ -32,15 +32,14 @@
     to {
         background-position: 0%;
     }
-  }
+}
   
   #desert {
     position: absolute;
-    bottom: 0px;
-    background-image: url('./img/t-rex-background.png');
+    background-image: url('./img/background.png');
     background-repeat: repeat-x;
     animation: slideright 600s infinite linear;
     -webkit-animation: slideright 600s infinite linear;
     width: 100%;
-    height: 200px;
-  }
+    height: 70%;
+}

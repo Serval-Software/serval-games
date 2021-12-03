@@ -1,10 +1,11 @@
 import Layout from '../../components/Layout/Layout';
+import { Grid, Typography } from '@material-ui/core';
 
 import './SharkAttack.css';
 
 const SharkAttack = () => {
     document.addEventListener('DOMContentLoaded', () => {
-        const dino = document.querySelector('.dino')
+        const shark = document.querySelector('.shark')
         const grid = document.querySelector('.grid')
         const body = document.querySelector('body')
         const alert = document.getElementById('alert')
@@ -37,7 +38,7 @@ const SharkAttack = () => {
                 position -= 5
                 count--
                 position = position * gravity
-                dino.style.bottom = position + 'px'
+                shark.style.bottom = position + 'px'
               },20)
         
             }
@@ -45,7 +46,7 @@ const SharkAttack = () => {
             position +=30
             count++
             position = position * gravity
-            dino.style.bottom = position + 'px'
+            shark.style.bottom = position + 'px'
           },20)
         }
         
@@ -63,9 +64,10 @@ const SharkAttack = () => {
               alert.innerHTML = 'Game Over'
               isGameOver = true
               //remove all children
-              body.removeChild(body.firstChild)
+              //body.removeChild(body.firstChild)
               while (grid.firstChild) {
                 grid.removeChild(grid.lastChild)
+                
               }
               
             }
@@ -74,7 +76,10 @@ const SharkAttack = () => {
           },20)
           if (!isGameOver) setTimeout(generateObstacles, randomTime)
         }
-        generateObstacles()
+
+            generateObstacles()
+        
+        
         })
 
 
@@ -83,22 +88,18 @@ const SharkAttack = () => {
         <Layout
             page="SharAttack"
             blockBody = {
-                // <>
-                // <Typography variant="h4">Bienvenue dans Shark Attack. Second mini-jeu de la soirée! </Typography>
-                // <Grid container direction="column" alignItems="center" xs={12}>
-                //     <Paper elevation={1}>
-                //         {/* <ChromeDinoGame /> */}
-                       
-                //     </Paper>
-                // </Grid>
-                // </>
-
-                <div id="desert">
-                    <h2 id="alert"></h2>
-                    <div class="grid">
-                        <div class="dino"></div>
-                    </div>
-                </div>
+                <>
+                    <Typography variant="h4">Bienvenue dans Shark Attack. Second mini-jeu de la soirée! </Typography>
+                    <Grid container >
+                        <div id="desert">
+                            <h2 id="alert"></h2>
+                            <div class="grid">
+                                <div class="shark"></div>
+                            </div>
+                        </div>
+                    </Grid>
+                </>
+                
             }
         />
     )
