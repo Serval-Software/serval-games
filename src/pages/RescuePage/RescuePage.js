@@ -10,7 +10,11 @@ const RescuePage = () => {
 
   useEffect(() => {
 
-    axios.post("https://localhost:8080/scrap")
+    axios.post("https://localhost:8080/scrap", {
+      params :{
+          url: "https://sauveteurdudunkerquois.fr"
+      }
+    })
     .then((response)=> {
       if(response.data !== null) setYearText(response.data);
     })
@@ -19,27 +23,33 @@ const RescuePage = () => {
   })
 
   function afficherTexte() {
-    return(
-      Object.entries(yearText).map(([key, value]) =>{
-        Object.entries(value).map(([key_, leTableau]) =>{
-          const {year, text} = leTableau;
-            return(
-              <>
-                <Grid item>
-                  {
-                    year
-                  }
-                </Grid>
-                <Grid item>
-                  {
-                    text
-                  }
-                </Grid>
-              </>
-            )
+    if(setYearText !== undefined && setYearText.length){
+      return(
+        Object.entries(yearText).map(([key, value]) =>{
+          Object.entries(value).map(([key_, leTableau]) =>{
+            const {year, text} = leTableau;
+              return(
+                <>
+                  <Grid item>
+                    <Typography>{
+                      year
+                    }</Typography>
+                  </Grid>
+                  <Grid item>
+                  <Typography>{
+                      text
+                    }</Typography>
+                  </Grid>
+                </>
+              )
+          })
         })
-      })
+      )
+    }
+    return(
+      <Typography variant="h4"> Pas de sites.</Typography>
     )
+    
     
   }
 
