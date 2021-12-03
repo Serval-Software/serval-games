@@ -1,5 +1,6 @@
-class Minesweeper {
+export default class Minesweeper {
 	constructor(difficulty) {
+		console.log("coucou",difficulty);
 		this.difficulty = difficulty
 		this.flags = {}
 
@@ -76,5 +77,5 @@ const settings = {
 	}
 }
 
-const game = new Minesweeper("beginner")
-console.log(game.board);
+// const game = new Minesweeper("beginner")
+// console.log(game.board);

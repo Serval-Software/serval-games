@@ -10,7 +10,7 @@ const Datasweeper = ({difficulty}) =>{
 
     useEffect(() => {
 
-        var minegame = new Minesweeper(difficulty);
+        const minegame = new Minesweeper(difficulty);
 
         setState(minegame.hidden)
         setGameArray(minegame.board)
