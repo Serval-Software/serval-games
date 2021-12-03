@@ -76,6 +76,5 @@ const settings = {
 	}
 }
 
-
 const game = new Minesweeper("beginner")
 console.log(game.board);

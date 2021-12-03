@@ -25,7 +25,6 @@ const MinesweeperTab = ({array, state}) => {
           </div>
         );
     }
-      
       TabPanel.propTypes = {
         children: PropTypes.node,
         index: PropTypes.any.isRequired,
@@ -53,8 +52,6 @@ const MinesweeperTab = ({array, state}) => {
       const handleChange = (event, newValue) => {
         setValue(newValue);
       };
-
-      
 
       return (
           <>
