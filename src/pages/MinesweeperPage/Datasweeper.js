@@ -18,7 +18,7 @@ const Datasweeper = ({difficulty}) =>{
 
     
 
-    }, [GameArray, stateCase]);
+    }, [GameArray, stateCase, difficulty]);
     function MakeCase(oneCase){
         if(stateCase){
             return(

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Grid, Box, Tab, Tabs, AppBar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
