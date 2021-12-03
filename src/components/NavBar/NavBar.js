@@ -32,9 +32,6 @@ const NavBar = () => {
             <ListItemLink href={`${randomint === 4 ? '/pirate': '/watersave' }`} className='navbar__links' id="nav-fridge-addition" >
               Sauveteur en Mer !
             </ListItemLink>
-            <ListItemLink href={`${randomint === 4 ? '/pirate': '/other' }`} className='navbar__links' id="nav-shopping" >
-              Autre
-            </ListItemLink>
           </Toolbar>
         </AppBar>
     );

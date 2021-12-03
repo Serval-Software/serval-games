@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, Link } from '@material-ui/core';
 import React from 'react';
 
 import './HomePage.css';
@@ -13,7 +13,9 @@ const HomePage = () => {
             <>
               <Grid container spacing="2" className="grid_home">
                 <Grid item xs="4">
-                  <img alt=" " className="home__image" src="serval_software.png"/>
+                  <Link href="/pirate" >
+                    <img alt=" " className="home__image" src="serval_software.png"/>
+                  </Link>
                 </Grid>
                 <Grid item xs="7">
                   <Typography className='Title' variant='h2' key="State">Bienvenue sur le sauvetage de l'équipe Serval</Typography>
